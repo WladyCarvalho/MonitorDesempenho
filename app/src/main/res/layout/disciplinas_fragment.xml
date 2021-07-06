@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.disciplina.DisciplinasFragment">
+
+   <RelativeLayout
+       android:background="@color/background"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <androidx.appcompat.widget.AppCompatImageView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:alpha="0.1"
+           android:scaleType="centerCrop"
+           android:src="@drawable/grupo_959"/>
+       <com.google.android.material.floatingactionbutton.FloatingActionButton
+           android:id="@+id/btn_add_disciplina"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentEnd="true"
+           android:layout_marginEnd="16dp"
+           android:layout_marginBottom="80dp"
+           android:backgroundTint="@color/primary"
+           app:tint="@android:color/white"
+           android:src="@drawable/ic_icon_open_plus"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="16dp" />
+
+       <LinearLayout
+           android:id="@+id/gp_header"
+           android:layout_marginTop="30dp"
+           android:gravity="center"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <RelativeLayout
+               android:layout_width="100dp"
+               android:layout_height="2dp"
+               android:background="@color/vermelho"/>
+           <TextView
+               android:layout_marginStart="10dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Disciplinas"
+               android:fontFamily="@font/segoe_ui_400"
+               android:textColor="@color/text_light"
+               android:textSize="26sp"
+               android:layout_marginLeft="10dp" />
+       </LinearLayout>
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/recycler_d"
+           android:layout_marginTop="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:padding="16dp"
+           android:layout_below="@id/gp_header"
+           tools:listitem="@layout/item_disciplina"/>
+   </RelativeLayout>
+
+</RelativeLayout>

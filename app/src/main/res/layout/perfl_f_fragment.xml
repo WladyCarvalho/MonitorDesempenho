@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.perfil.perfl_f">
+
+    <RelativeLayout
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/grupo_959"/>
+        <RelativeLayout
+            android:id="@+id/line_b_txt"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="90dp"
+            android:layout_height="2dp"
+            android:background="@color/verde"/>
+        <TextView
+            android:id="@+id/txt_perfil"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/line_b_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perfil"
+            android:fontFamily="@font/segoe_ui_light_300"
+            android:textColor="@color/text_light"
+            android:textSize="28sp"/>
+
+        <LinearLayout
+            android:layout_below="@id/txt_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/ln_top"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/img_perfil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="26dp"
+                    tools:srcCompat="@drawable/grupo_775" />
+                <LinearLayout
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_below="@id/txt_perfil"
+                    android:layout_toRightOf="@id/img_perfil">
+
+                    <TextView
+                        android:id="@+id/txt_nome_perfil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wladimiro de Carvalho"
+                        android:textSize="18sp"
+                        android:textColor="@color/text_light"/>
+                    <TextView
+                        android:id="@+id/txt_curso"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Eng. Informática"
+                        android:textSize="14sp"
+                        android:textColor="@color/light_primary"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/txt_ano"
+                            android:layout_margin="@dimen/activity_horizontal_margin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4º Ano"
+                            android:textSize="12sp"
+                            android:textColor="@color/verde"/>
+                        <TextView
+                            android:id="@+id/txt_semestre"
+                            android:layout_margin="@dimen/activity_horizontal_margin"
+                            android:textDirection="firstStrongLtr"
+                            android:textAlignment="viewEnd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2º Semestre"
+                            android:textSize="12sp"
+                            android:textColor="@color/verde"
+                            android:gravity="end" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_editar"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/primary"
+                android:layout_height="60dp"
+                android:text="Editar perfil"
+                android:fontFamily="@font/segoe_ui_gras_700"/>
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

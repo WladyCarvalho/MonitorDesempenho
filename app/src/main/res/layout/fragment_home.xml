@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <RelativeLayout
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.1"
+            android:src="@drawable/grupo_959" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/primary"
+            app:tint="@android:color/white"
+            android:layout_marginBottom="80dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_icon_open_plus"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="16dp" />
+        <TextView
+            android:id="@+id/top_text"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segoe_ui_light_300"
+            android:text="Média register"
+            android:textSize="26sp"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:textColor="@color/text_light" />
+        <RelativeLayout
+            android:id="@+id/bg_media_geral"
+            android:layout_below="@id/top_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/card">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/bg_media_actual"
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp"
+                android:backgroundTint="@color/primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+                <RelativeLayout
+
+                    android:layout_width="150dp"
+                    android:layout_height="120dp">
+                    <LinearLayout
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/txt_media_total"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00.00"
+                            android:fontFamily="@font/segoe_ui_400"
+                            android:textSize="28sp"
+                            android:textColor="@color/text_light"/>
+                        <TextView
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Média actual"
+                            android:fontFamily="@font/segoe_ui_400"
+                            android:textSize="16sp"
+                            android:textColor="@color/text_light"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_toRightOf="@id/bg_media_actual"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/bar_lateral"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"
+                    android:backgroundTint="@color/white"
+                    android:layout_width="4dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:padding="26dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_toStartOf="@id/bar_lateral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical"
+                    android:layout_toLeftOf="@id/bar_lateral"
+                    android:layout_marginRight="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe_ui_400"
+                        android:text="12.00"
+                        android:textColor="@color/text_light"
+                        android:textSize="24sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/pink" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe_ui_400"
+                        android:text="1º semestre"
+                        android:textColor="@color/text_light"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe_ui_400"
+                        android:text="12.00"
+                        android:textColor="@color/text_light"
+                        android:textSize="24sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/blue" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe_ui_400"
+                        android:text="1º semestre"
+                        android:textColor="@color/text_light"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/txt_provas_recentes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Provas recentes"
+            android:textColor="@color/text_light"
+            android:textSize="16sp"
+            android:layout_below="@id/bg_media_geral"
+            android:layout_margin="@dimen/activity_horizontal_margin"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_home"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/txt_provas_recentes"
+            tools:listitem="@layout/item_prova_recente"
+            />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
